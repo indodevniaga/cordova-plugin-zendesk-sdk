@@ -55,13 +55,13 @@
   NSArray *labels = [command.arguments objectAtIndex:2];
 
   if (![groupType isEqual:[NSNull null]] && ![groupIds isEqual:[NSNull null]]) {
-    if ([groupType isEqualToString:@"category"]) {
-      [helpCenterConfig setGroupType:ZDKHelpCenterOverviewGroupTypeCategory];
-    } else if ([groupType isEqualToString:@"section"]) {
-      [helpCenterConfig setGroupType:ZDKHelpCenterOverviewGroupTypeSection];
-    } else {
+    // if ([groupType isEqualToString:@"category"]) {
+    //   [helpCenterConfig setGroupType:ZDKHelpCenterOverviewGroupTypeCategory];
+    // } else if ([groupType isEqualToString:@"section"]) {
+    //   [helpCenterConfig setGroupType:ZDKHelpCenterOverviewGroupTypeSection];
+    // } else {
       [helpCenterConfig setGroupType:ZDKHelpCenterOverviewGroupTypeDefault];
-    }
+    // }
 
     [helpCenterConfig setGroupIds:groupIds];
   }
